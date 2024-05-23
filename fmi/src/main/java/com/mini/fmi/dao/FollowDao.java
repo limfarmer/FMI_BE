@@ -2,11 +2,12 @@ package com.mini.fmi.dao;
 
 import com.mini.fmi.common.Common;
 import com.mini.fmi.vo.FollowVo;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-
+@Repository
 public class FollowDao {
 
     public List<FollowVo> getFollowList(String userId) {

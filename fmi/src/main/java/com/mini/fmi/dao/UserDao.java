@@ -2,9 +2,10 @@ package com.mini.fmi.dao;
 
 import com.mini.fmi.common.Common;
 import com.mini.fmi.vo.UserVo;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
-
+@Repository
 public class UserDao {
 
     // 회원 가입
