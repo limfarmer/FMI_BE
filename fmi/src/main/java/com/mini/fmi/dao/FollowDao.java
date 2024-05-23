@@ -3,45 +3,50 @@ package com.mini.fmi.dao;
 import com.mini.fmi.common.Common;
 import com.mini.fmi.vo.FollowVo;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-/**
- * User단 만들어지면 옮길 예정
- */
-public class FollowDao {
-    private Connection conn = null;
-    private Statement stmt = null;
-    private ResultSet rs = null;
-    private PreparedStatement pstmt = null;
 
-    public List<FollowVo> getFollowList(String id){
-        List<FollowVo> list =  new ArrayList<>();
-        System.out.println(id + "아이디");
-        try{
-            conn = Common.getConnection();
-            stmt = conn.createStatement();
-            String sql = "SELECT * FROM FOLLOW WHERE USER_ID ='"+ id + "'";
-            rs = stmt.executeQuery(sql);
-            while (rs.next()){
+public class FollowDao {
+
+    public List<FollowVo> getFollowList(String userId) {
+        List<FollowVo> list = new ArrayList<>();
+        String sql = "SELECT * FROM FOLLOW WHERE USER_ID = ?";
+        try {
+            Connection conn = Common.getConnection();
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, userId);
+            ResultSet rs = pstmt.executeQuery();
+            while (rs.next()) {
                 String followUserId = rs.getString("follow_id");
                 String followId = rs.getString("user_id");
                 String followTeamName = rs.getString("team_name");
-                FollowVo vo = new FollowVo();
-                vo.setFollowId(followId);
-                vo.setUserId(followUserId);
-                vo.setTeamName(followTeamName);
+                FollowVo vo = new FollowVo(followUserId, followId, followTeamName);
                 list.add(vo);
             }
-        }catch (Exception e ){
+            Common.close(rs);
+            Common.close(pstmt);
+            Common.close(conn);
+        } catch (Exception e) {
             e.printStackTrace();
         }
-            Common.close(rs);
-            Common.close(stmt);
+        return list;
+    }
+
+    public boolean unfollowTeam(String userId, String teamId) {
+        int result = 0;
+        String sql = "DELETE FROM FOLLOW WHERE USER_ID = ? AND TEAM_ID = ?";
+        try {
+            Connection conn = Common.getConnection();
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, userId);
+            pstmt.setString(2, teamId);
+            result = pstmt.executeUpdate();
+            Common.close(pstmt);
             Common.close(conn);
-      return list;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result == 1;
     }
 }
