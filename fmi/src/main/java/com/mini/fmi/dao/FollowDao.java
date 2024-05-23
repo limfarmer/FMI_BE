@@ -9,7 +9,9 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * User단 만들어지면 옮길 예정
+ */
 public class FollowDao {
     private Connection conn = null;
     private Statement stmt = null;
