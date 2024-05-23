@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * User단 만들어지면 옮길 예정
+ * User단 만들어지면 옮길 예정a
  */
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
