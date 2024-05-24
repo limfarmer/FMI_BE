@@ -36,6 +36,22 @@ public class MyPageService {
     }
 
     public boolean deleteUser(String userId) {
-        return userDao.userDelete(userId); // 여기를 수정했습니다.
+        return userDao.userDelete(userId);
+    }
+
+    public boolean userInsert(UserVo userVo) {
+        return userDao.userInsert(userVo);
+    }
+
+    public boolean loginCheck(String id, String pw) {
+        return userDao.loginCheck(id, pw);
+    }
+
+    public String findId(String email, String name) {
+        return userDao.findId(email, name);
+    }
+
+    public boolean userDelete(String userId) {
+        return userDao.userDelete(userId);
     }
 }
