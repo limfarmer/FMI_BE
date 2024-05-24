@@ -54,4 +54,8 @@ public class MyPageService {
     public boolean userDelete(String userId) {
         return userDao.userDelete(userId);
     }
+    public boolean deactivateUser(String userId) {
+        return userDao.updateUserStatus(userId, "INACTIVE");
+    }
+
 }

@@ -5,6 +5,9 @@ import com.mini.fmi.vo.UserVo;
 import org.springframework.stereotype.Repository;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
 @Repository
 public class UserDao {
 
@@ -22,7 +25,6 @@ public class UserDao {
             pstmt.setString(5, user.getNickname());
             pstmt.setDate(6, new java.sql.Date(user.getJoinDate().getTime()));
             result = pstmt.executeUpdate();
-            System.out.println("회원 가입 DB 결과 확인 : " + result);
             Common.close(pstmt);
             Common.close(conn);
         } catch (Exception e) {
@@ -137,5 +139,52 @@ public class UserDao {
             e.printStackTrace();
         }
         return result == 1;
+    }
+
+    // 사용자 상태 업데이트 (비활성화)
+    public boolean updateUserStatus(String userId, String status) {
+        int result = 0;
+        String sql = "UPDATE USERS SET STATUS = ? WHERE USER_ID = ?";
+        try {
+            Connection conn = Common.getConnection();
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, status);
+            pstmt.setString(2, userId);
+            result = pstmt.executeUpdate();
+            Common.close(pstmt);
+            Common.close(conn);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result == 1;
+    }
+
+    // 비활성화된 사용자 조회
+    public List<UserVo> findUsersByStatus(String status) {
+        List<UserVo> users = new ArrayList<>();
+        String sql = "SELECT * FROM USERS WHERE STATUS = ?";
+        try {
+            Connection conn = Common.getConnection();
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, status);
+            ResultSet rs = pstmt.executeQuery();
+            while (rs.next()) {
+                UserVo user = new UserVo(
+                        rs.getString("USER_ID"),
+                        rs.getString("PASSWORD"),
+                        rs.getString("EMAIL"),
+                        rs.getDate("JOIN_DATE"),
+                        rs.getString("NAME"),
+                        rs.getString("NICKNAME")
+                );
+                users.add(user);
+            }
+            Common.close(rs);
+            Common.close(pstmt);
+            Common.close(conn);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return users;
     }
 }
