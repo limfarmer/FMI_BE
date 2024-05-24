@@ -17,17 +17,23 @@ import java.util.List;
 @RequestMapping("/follow")
 @Slf4j
 public class FollowController {
-    
+
+    private final FollowDao followDao;
+
+    public FollowController(FollowDao followDao) {
+        this.followDao = followDao;
+    }
+
     @GetMapping("/list")
     public ResponseEntity<List<FollowVo>> getFollowList(@RequestParam String userId){
-        System.out.println("ㅎㅇ");
-        FollowDao followDao = new FollowDao();
         List<FollowVo> list = followDao.getFollowList(userId);
         return ResponseEntity.ok(list);
     }
-//    @GetMapping("/list")
-//    public ResponseEntity<List<BoardDto>> boardList() {
-//        List<BoardDto> list = boardService.getBoardList();
-//        return ResponseEntity.ok(list);
-//    }
+
+    // DELETE 방식, 팔로우 해제
+    @DeleteMapping("/{userId}/{teamId}")
+    public ResponseEntity<Boolean> unfollowTeam(@PathVariable String userId, @PathVariable String teamId) {
+        boolean isTrue = followDao.unfollowTeam(userId, teamId);
+        return ResponseEntity.ok(isTrue);
+    }
 }
