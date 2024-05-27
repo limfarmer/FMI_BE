@@ -23,7 +23,7 @@ public class UserDao {
             pstmt.setString(3, user.getName());
             pstmt.setString(4, user.getEmail());
             pstmt.setString(5, user.getNickname());
-            pstmt.setDate(6, new java.sql.Date(user.getJoinDate().getTime()));
+            pstmt.setDate(6, new java.sql.Date(System.currentTimeMillis())); // 현재 날짜를 joinDate로 설정
             result = pstmt.executeUpdate();
             Common.close(pstmt);
             Common.close(conn);
@@ -55,7 +55,7 @@ public class UserDao {
 
     // 이메일 & 이름으로 ID 찾기
     public String findId(String email, String name) {
-        String id = "";
+        String userId = null;
         String sql = "SELECT USER_ID FROM USERS WHERE EMAIL = ? AND NAME = ?";
         try {
             Connection conn = Common.getConnection();
@@ -64,7 +64,7 @@ public class UserDao {
             pstmt.setString(2, name);
             ResultSet rs = pstmt.executeQuery();
             if (rs.next()) {
-                id = rs.getString("USER_ID");
+                userId = rs.getString("USER_ID");
             }
             Common.close(rs);
             Common.close(pstmt);
@@ -72,7 +72,29 @@ public class UserDao {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return id;
+        return userId;
+    }
+
+    // 이메일 & 닉네임으로 비밀번호 찾기
+    public String findPassword(String email, String nickname) {
+        String password = null;
+        String sql = "SELECT PASSWORD FROM USERS WHERE EMAIL = ? AND NICKNAME = ?";
+        try {
+            Connection conn = Common.getConnection();
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, email);
+            pstmt.setString(2, nickname);
+            ResultSet rs = pstmt.executeQuery();
+            if (rs.next()) {
+                password = rs.getString("PASSWORD");
+            }
+            Common.close(rs);
+            Common.close(pstmt);
+            Common.close(conn);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return password;
     }
 
     // 회원 탈퇴

@@ -17,3 +17,160 @@
 2024-05-27 11:30:39.087  WARN 3224 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
 2024-05-27 11:30:39.112  INFO 3224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8182 (http) with context path ''
 2024-05-27 11:30:39.120  INFO 3224 --- [restartedMain] com.mini.fmi.FmiApplication              : Started FmiApplication in 2.033 seconds (JVM running for 2.38)
+2024-05-27 11:40:16.621  INFO 480 --- [restartedMain] com.mini.fmi.FmiApplication              : Starting FmiApplication using Java 17.0.11 on DESKTOP-OLBQKOO with PID 480 (D:\dev\mini\FMI_BE\fmi\build\classes\java\main started by user1 in D:\dev\mini\FMI_BE\fmi)
+2024-05-27 11:40:16.622 DEBUG 480 --- [restartedMain] com.mini.fmi.FmiApplication              : Running with Spring Boot v2.7.11, Spring v5.3.27
+2024-05-27 11:40:16.622  INFO 480 --- [restartedMain] com.mini.fmi.FmiApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-05-27 11:40:16.655  INFO 480 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\user1\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc11\21.5.0.0\3e588fed4618a39c7d655bfc1159ecb57fabc217\ojdbc11-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/user1/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc11/21.5.0.0/3e588fed4618a39c7d655bfc1159ecb57fabc217/oraclepki.jar
+2024-05-27 11:40:16.656  INFO 480 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-27 11:40:16.656  INFO 480 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-27 11:40:16.982  INFO 480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-27 11:40:16.989  INFO 480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2024-05-27 11:40:17.378  INFO 480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8182 (http)
+2024-05-27 11:40:17.385  INFO 480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-27 11:40:17.386  INFO 480 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-05-27 11:40:17.435  INFO 480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-27 11:40:17.435  INFO 480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 778 ms
+2024-05-27 11:40:17.794  INFO 480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-27 11:40:17.797  WARN 480 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2024-05-27 11:40:17.934  INFO 480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-27 11:40:18.008  WARN 480 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-05-27 11:40:18.024  INFO 480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8182 (http) with context path ''
+2024-05-27 11:40:18.031  INFO 480 --- [restartedMain] com.mini.fmi.FmiApplication              : Started FmiApplication in 1.629 seconds (JVM running for 1.868)
+2024-05-27 12:40:05.858  INFO 480 --- [http-nio-8182-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-27 12:40:05.860  INFO 480 --- [http-nio-8182-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-27 12:40:05.868  INFO 480 --- [http-nio-8182-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2024-05-27 12:40:05.941  INFO 480 --- [http-nio-8182-exec-2] com.mini.fmi.controller.LoginController  : userVo: 
+2024-05-27 12:40:05.941  INFO 480 --- [http-nio-8182-exec-2] com.mini.fmi.controller.LoginController  : userVo: 
+2024-05-27 12:40:36.368  INFO 480 --- [http-nio-8182-exec-5] com.mini.fmi.controller.LoginController  : userVo: 
+2024-05-27 12:40:36.368  INFO 480 --- [http-nio-8182-exec-5] com.mini.fmi.controller.LoginController  : userVo: 
+2024-05-27 12:47:27.127  INFO 480 --- [http-nio-8182-exec-3] com.mini.fmi.controller.LoginController  : userVo: 
+2024-05-27 12:47:27.128  INFO 480 --- [http-nio-8182-exec-3] com.mini.fmi.controller.LoginController  : userVo: 
+2024-05-27 12:49:46.954  INFO 480 --- [http-nio-8182-exec-7] com.mini.fmi.controller.LoginController  : userVo: 
+2024-05-27 12:49:46.954  INFO 480 --- [http-nio-8182-exec-7] com.mini.fmi.controller.LoginController  : userVo: 
+2024-05-27 12:50:00.646  INFO 480 --- [http-nio-8182-exec-8] com.mini.fmi.controller.LoginController  : userVo: 
+2024-05-27 12:50:00.647  INFO 480 --- [http-nio-8182-exec-8] com.mini.fmi.controller.LoginController  : userVo: 
+2024-05-27 15:13:42.570  INFO 480 --- [http-nio-8182-exec-1] com.mini.fmi.controller.LoginController  : userVo: bfjhugvbefg
+2024-05-27 15:13:42.571  INFO 480 --- [http-nio-8182-exec-1] com.mini.fmi.controller.LoginController  : userVo: asdfvasfdgv
+2024-05-27 15:55:21.395  INFO 15264 --- [restartedMain] com.mini.fmi.FmiApplication              : Starting FmiApplication using Java 17.0.11 on DESKTOP-OLBQKOO with PID 15264 (D:\dev\mini\FMI_BE\fmi\build\classes\java\main started by user1 in D:\dev\mini\FMI_BE\fmi)
+2024-05-27 15:55:21.396 DEBUG 15264 --- [restartedMain] com.mini.fmi.FmiApplication              : Running with Spring Boot v2.7.11, Spring v5.3.27
+2024-05-27 15:55:21.397  INFO 15264 --- [restartedMain] com.mini.fmi.FmiApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-05-27 15:55:21.429  INFO 15264 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\user1\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc11\21.5.0.0\3e588fed4618a39c7d655bfc1159ecb57fabc217\ojdbc11-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/user1/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc11/21.5.0.0/3e588fed4618a39c7d655bfc1159ecb57fabc217/oraclepki.jar
+2024-05-27 15:55:21.430  INFO 15264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-27 15:55:21.430  INFO 15264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-27 15:55:21.819  INFO 15264 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-27 15:55:21.827  INFO 15264 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2024-05-27 15:55:22.257  INFO 15264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8182 (http)
+2024-05-27 15:55:22.266  INFO 15264 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-27 15:55:22.266  INFO 15264 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-05-27 15:55:22.311  INFO 15264 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-27 15:55:22.311  INFO 15264 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 881 ms
+2024-05-27 15:55:22.725  INFO 15264 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-27 15:55:22.729  WARN 15264 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2024-05-27 15:55:22.926  INFO 15264 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-27 15:55:23.018  WARN 15264 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-05-27 15:55:23.039  INFO 15264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8182 (http) with context path ''
+2024-05-27 15:55:23.046  INFO 15264 --- [restartedMain] com.mini.fmi.FmiApplication              : Started FmiApplication in 1.903 seconds (JVM running for 2.198)
+2024-05-27 16:09:54.340  INFO 14000 --- [restartedMain] com.mini.fmi.FmiApplication              : Starting FmiApplication using Java 17.0.11 on DESKTOP-OLBQKOO with PID 14000 (D:\dev\mini\FMI_BE\fmi\build\classes\java\main started by user1 in D:\dev\mini\FMI_BE\fmi)
+2024-05-27 16:09:54.341 DEBUG 14000 --- [restartedMain] com.mini.fmi.FmiApplication              : Running with Spring Boot v2.7.11, Spring v5.3.27
+2024-05-27 16:09:54.341  INFO 14000 --- [restartedMain] com.mini.fmi.FmiApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-05-27 16:09:54.374  INFO 14000 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\user1\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc11\21.5.0.0\3e588fed4618a39c7d655bfc1159ecb57fabc217\ojdbc11-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/user1/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc11/21.5.0.0/3e588fed4618a39c7d655bfc1159ecb57fabc217/oraclepki.jar
+2024-05-27 16:09:54.374  INFO 14000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-27 16:09:54.374  INFO 14000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-27 16:09:54.723  INFO 14000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-27 16:09:54.730  INFO 14000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2024-05-27 16:09:55.130  INFO 14000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8182 (http)
+2024-05-27 16:09:55.138  INFO 14000 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-27 16:09:55.138  INFO 14000 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-05-27 16:09:55.181  INFO 14000 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-27 16:09:55.181  INFO 14000 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 806 ms
+2024-05-27 16:09:55.553  INFO 14000 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-27 16:09:55.556  WARN 14000 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2024-05-27 16:09:55.745  INFO 14000 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-27 16:09:55.841  WARN 14000 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-05-27 16:09:55.863  INFO 14000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8182 (http) with context path ''
+2024-05-27 16:09:55.871  INFO 14000 --- [restartedMain] com.mini.fmi.FmiApplication              : Started FmiApplication in 1.761 seconds (JVM running for 2.019)
+2024-05-27 16:26:08.566  INFO 10720 --- [restartedMain] com.mini.fmi.FmiApplication              : Starting FmiApplication using Java 17.0.11 on DESKTOP-OLBQKOO with PID 10720 (D:\dev\mini\FMI_BE\fmi\build\classes\java\main started by user1 in D:\dev\mini\FMI_BE\fmi)
+2024-05-27 16:26:08.567 DEBUG 10720 --- [restartedMain] com.mini.fmi.FmiApplication              : Running with Spring Boot v2.7.11, Spring v5.3.27
+2024-05-27 16:26:08.567  INFO 10720 --- [restartedMain] com.mini.fmi.FmiApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-05-27 16:26:08.597  INFO 10720 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\user1\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc11\21.5.0.0\3e588fed4618a39c7d655bfc1159ecb57fabc217\ojdbc11-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/user1/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc11/21.5.0.0/3e588fed4618a39c7d655bfc1159ecb57fabc217/oraclepki.jar
+2024-05-27 16:26:08.598  INFO 10720 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-27 16:26:08.598  INFO 10720 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-27 16:26:08.912  INFO 10720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-27 16:26:08.919  INFO 10720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2024-05-27 16:26:09.280  INFO 10720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8182 (http)
+2024-05-27 16:26:09.286  INFO 10720 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-27 16:26:09.286  INFO 10720 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-05-27 16:26:09.321  INFO 10720 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-27 16:26:09.321  INFO 10720 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 723 ms
+2024-05-27 16:26:09.660  INFO 10720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-27 16:26:09.664  WARN 10720 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2024-05-27 16:26:09.804  INFO 10720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-27 16:26:09.879  WARN 10720 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-05-27 16:26:09.896  INFO 10720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8182 (http) with context path ''
+2024-05-27 16:26:09.903  INFO 10720 --- [restartedMain] com.mini.fmi.FmiApplication              : Started FmiApplication in 1.553 seconds (JVM running for 1.796)
+2024-05-27 17:09:55.294  INFO 10720 --- [http-nio-8182-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-27 17:09:55.296  INFO 10720 --- [http-nio-8182-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-27 17:09:55.305  INFO 10720 --- [http-nio-8182-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2024-05-27 17:09:55.386  INFO 10720 --- [http-nio-8182-exec-2] com.mini.fmi.controller.LoginController  : userVo: 고며ㅠㅗㄹㅇ
+2024-05-27 17:09:55.386  INFO 10720 --- [http-nio-8182-exec-2] com.mini.fmi.controller.LoginController  : userVo: ASDFS
+2024-05-27 17:11:03.745  INFO 10720 --- [http-nio-8182-exec-4] com.mini.fmi.controller.LoginController  : userVo: 
+2024-05-27 17:11:03.746  INFO 10720 --- [http-nio-8182-exec-4] com.mini.fmi.controller.LoginController  : userVo: 
+2024-05-27 17:22:41.065  INFO 10720 --- [http-nio-8182-exec-6] com.mini.fmi.controller.LoginController  : userVo: 고명규
+2024-05-27 17:22:41.066  INFO 10720 --- [http-nio-8182-exec-6] com.mini.fmi.controller.LoginController  : userVo: 6416
+2024-05-27 17:52:08.469  INFO 10720 --- [http-nio-8182-exec-9] com.mini.fmi.controller.LoginController  : userVo: 검로ㅠㅜ
+2024-05-27 17:52:08.469  INFO 10720 --- [http-nio-8182-exec-9] com.mini.fmi.controller.LoginController  : userVo: 4116516
+2024-05-27 18:13:32.843  INFO 2248 --- [restartedMain] com.mini.fmi.FmiApplication              : Starting FmiApplication using Java 17.0.11 on DESKTOP-OLBQKOO with PID 2248 (D:\dev\mini\FMI_BE\fmi\build\classes\java\main started by user1 in D:\dev\mini\FMI_BE\fmi)
+2024-05-27 18:13:32.844 DEBUG 2248 --- [restartedMain] com.mini.fmi.FmiApplication              : Running with Spring Boot v2.7.11, Spring v5.3.27
+2024-05-27 18:13:32.844  INFO 2248 --- [restartedMain] com.mini.fmi.FmiApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-05-27 18:13:32.873  INFO 2248 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\user1\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc11\21.5.0.0\3e588fed4618a39c7d655bfc1159ecb57fabc217\ojdbc11-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/user1/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc11/21.5.0.0/3e588fed4618a39c7d655bfc1159ecb57fabc217/oraclepki.jar
+2024-05-27 18:13:32.874  INFO 2248 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-27 18:13:32.874  INFO 2248 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-27 18:13:33.193  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-27 18:13:33.199  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2024-05-27 18:13:33.554  INFO 2248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8182 (http)
+2024-05-27 18:13:33.562  INFO 2248 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-27 18:13:33.562  INFO 2248 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-05-27 18:13:33.597  INFO 2248 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-27 18:13:33.597  INFO 2248 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 723 ms
+2024-05-27 18:13:33.911  INFO 2248 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-27 18:13:33.914  WARN 2248 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2024-05-27 18:13:34.053  INFO 2248 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-27 18:13:34.126  WARN 2248 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-05-27 18:13:34.143  INFO 2248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8182 (http) with context path ''
+2024-05-27 18:13:34.150  INFO 2248 --- [restartedMain] com.mini.fmi.FmiApplication              : Started FmiApplication in 1.529 seconds (JVM running for 1.764)
+2024-05-27 18:13:36.815  INFO 2248 --- [http-nio-8182-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-27 18:13:36.816  INFO 2248 --- [http-nio-8182-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-27 18:13:36.816  INFO 2248 --- [http-nio-8182-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-05-27 18:29:52.042  INFO 11368 --- [Test worker] com.mini.fmi.FmiApplicationTests         : Starting FmiApplicationTests using Java 11.0.21 on DESKTOP-OLBQKOO with PID 11368 (started by user1 in D:\dev\mini\FMI_BE\fmi)
+2024-05-27 18:29:52.043 DEBUG 11368 --- [Test worker] com.mini.fmi.FmiApplicationTests         : Running with Spring Boot v2.7.11, Spring v5.3.27
+2024-05-27 18:29:52.043  INFO 11368 --- [Test worker] com.mini.fmi.FmiApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-05-27 18:29:52.387  INFO 11368 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-27 18:29:52.394  INFO 11368 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2024-05-27 18:29:53.156  INFO 11368 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-27 18:29:53.162  WARN 11368 --- [Test worker] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2024-05-27 18:29:53.342  INFO 11368 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-27 18:29:53.442  INFO 11368 --- [Test worker] com.mini.fmi.FmiApplicationTests         : Started FmiApplicationTests in 1.6 seconds (JVM running for 2.259)
+2024-05-27 18:29:53.688  INFO 11368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-27 18:29:53.698  INFO 11368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-27 18:30:14.578  INFO 11544 --- [restartedMain] com.mini.fmi.FmiApplication              : Starting FmiApplication using Java 17.0.11 on DESKTOP-OLBQKOO with PID 11544 (D:\dev\mini\FMI_BE\fmi\build\classes\java\main started by user1 in D:\dev\mini\FMI_BE\fmi)
+2024-05-27 18:30:14.579 DEBUG 11544 --- [restartedMain] com.mini.fmi.FmiApplication              : Running with Spring Boot v2.7.11, Spring v5.3.27
+2024-05-27 18:30:14.580  INFO 11544 --- [restartedMain] com.mini.fmi.FmiApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-05-27 18:30:14.610  INFO 11544 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\user1\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc11\21.5.0.0\3e588fed4618a39c7d655bfc1159ecb57fabc217\ojdbc11-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/user1/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc11/21.5.0.0/3e588fed4618a39c7d655bfc1159ecb57fabc217/oraclepki.jar
+2024-05-27 18:30:14.610  INFO 11544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-27 18:30:14.610  INFO 11544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-27 18:30:14.922  INFO 11544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-27 18:30:14.929  INFO 11544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2024-05-27 18:30:15.298  INFO 11544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8182 (http)
+2024-05-27 18:30:15.305  INFO 11544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-27 18:30:15.305  INFO 11544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-05-27 18:30:15.342  INFO 11544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-27 18:30:15.343  INFO 11544 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 732 ms
+2024-05-27 18:30:15.665  INFO 11544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-27 18:30:15.668  WARN 11544 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2024-05-27 18:30:15.799  INFO 11544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-27 18:30:15.873  WARN 11544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-05-27 18:30:15.890  INFO 11544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8182 (http) with context path ''
+2024-05-27 18:30:15.897  INFO 11544 --- [restartedMain] com.mini.fmi.FmiApplication              : Started FmiApplication in 1.529 seconds (JVM running for 1.759)
+2024-05-27 18:33:42.954  INFO 11544 --- [http-nio-8182-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-27 18:33:42.954  INFO 11544 --- [http-nio-8182-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-27 18:33:42.955  INFO 11544 --- [http-nio-8182-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
