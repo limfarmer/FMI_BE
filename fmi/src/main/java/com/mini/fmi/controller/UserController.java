@@ -27,14 +27,6 @@ public class UserController {
         return ResponseEntity.ok(isTrue);
     }
 
-    @PostMapping("/login")
-    public ResponseEntity<Boolean> login(@RequestBody UserVo userVo) {
-        log.info("userVo: {}", userVo.getId());
-        log.info("userVo: {}", userVo.getPw());
-        boolean isTrue = myPageService.loginCheck(userVo.getId(), userVo.getPw());
-        return ResponseEntity.ok(isTrue);
-    }
-
     @GetMapping("/findId")
     public ResponseEntity<String> findId(@RequestParam String email, @RequestParam String name) {
         String list = myPageService.findId(email, name);
@@ -60,11 +52,11 @@ public class UserController {
         boolean isUpdated = myPageService.updateUserInfo(userVo);
         return isUpdated ? ResponseEntity.ok().build() : ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
     }
+
     @PostMapping("/deactivate")
     public ResponseEntity<Boolean> deactivateUser(@RequestBody Map<String, String> data) {
         String userId = data.get("id");
         boolean isDeactivated = myPageService.deactivateUser(userId);
         return ResponseEntity.ok(isDeactivated);
     }
-
 }
