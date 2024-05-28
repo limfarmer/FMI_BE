@@ -34,13 +34,15 @@ public class FollowDao {
         return list;
     }
 
-    public boolean unfollowTeam(String userId, String teamId) {
+    public boolean unfollowTeam(String teamId, String userId) {
         int result = 0;
-        String sql = "DELETE FROM FOLLOW WHERE USER_ID = ? AND TEAM_ID = ?";
+        //System.out.println(teamId + " team name " + userId.replace("\"", " ") + " user id");
+        String sql = "DELETE FROM FOLLOW WHERE USER_ID = ? AND TEAM_NAME = ?";
         try {
             Connection conn = Common.getConnection();
             PreparedStatement pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, userId);
+            // "userId" 형태로 넘어와서 "를 제거함
+            pstmt.setString(1, userId.replace("\"", ""));
             pstmt.setString(2, teamId);
             result = pstmt.executeUpdate();
             Common.close(pstmt);

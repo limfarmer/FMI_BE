@@ -19,7 +19,7 @@ public class MyPageService {
         return followDao.getFollowList(userId);
     }
 
-    public boolean unfollowTeam(String userId, String teamId) {
-        return followDao.unfollowTeam(userId, teamId);
+    public boolean unfollowTeam(String teamId, String userId) {
+        return followDao.unfollowTeam(teamId, userId);
     }
 }

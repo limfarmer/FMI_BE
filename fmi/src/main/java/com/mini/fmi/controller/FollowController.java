@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * User단 만들어지면 옮길 예정a
+ * User단 만들어지면 옮길 예정
  */
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
@@ -31,9 +31,10 @@ public class FollowController {
     }
 
     // DELETE 방식, 팔로우 해제
-    @DeleteMapping("/{userId}/{teamId}")
-    public ResponseEntity<Boolean> unfollowTeam(@PathVariable String userId, @PathVariable String teamId) {
-        boolean isTrue = followDao.unfollowTeam(userId, teamId);
-        return ResponseEntity.ok(isTrue);
-    }
+//    @DeleteMapping("/{userId}/{teamId}")
+//    public ResponseEntity<Boolean> unfollowTeam(@PathVariable String userId, @PathVariable String teamId) {
+//        System.out.println("o");
+//        boolean isTrue = followDao.unfollowTeam(userId, teamId);
+//        return ResponseEntity.ok(isTrue);
+//    }
 }

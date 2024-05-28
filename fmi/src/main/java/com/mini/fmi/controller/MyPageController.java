@@ -40,9 +40,9 @@ public class MyPageController {
         return ResponseEntity.ok(list);
     }
 
-    @DeleteMapping("/follow/{teamId}")
-    public ResponseEntity<Boolean> unfollowTeam(@PathVariable String teamId, @RequestParam String userId) {
-        boolean result = myPageService.unfollowTeam(userId, teamId);
+    @DeleteMapping("/follow/{teamId},{userId}")
+    public ResponseEntity<Boolean> unfollowTeam(@PathVariable String teamId, @PathVariable String userId) {
+        boolean result = myPageService.unfollowTeam(teamId, userId);
         return ResponseEntity.ok(result);
     }
 
