@@ -1,6 +1,6 @@
 package com.mini.fmi.service;
 
-import com.mini.fmi.dao.FollowDao;
+import com.mini.fmi.dao.MypageDao;
 import com.mini.fmi.vo.FollowVo;
 import org.springframework.stereotype.Service;
 
@@ -9,17 +9,17 @@ import java.util.List;
 @Service
 public class MyPageService {
 
-    private final FollowDao followDao;
+    private final MypageDao mypageDao;
 
-    public MyPageService(FollowDao followDao) {
-        this.followDao = followDao;
+    public MyPageService(MypageDao mypageDao) {
+        this.mypageDao = mypageDao;
     }
 
     public List<FollowVo> getFollowList(String userId) {
-        return followDao.getFollowList(userId);
+        return mypageDao.getFollowList(userId);
     }
 
     public boolean unfollowTeam(String teamId, String userId) {
-        return followDao.unfollowTeam(teamId, userId);
+        return mypageDao.unfollowTeam(teamId, userId);
     }
 }

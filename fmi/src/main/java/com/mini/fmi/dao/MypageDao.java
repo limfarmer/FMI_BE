@@ -8,7 +8,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 @Repository
-public class FollowDao {
+public class MypageDao {
 
     public List<FollowVo> getFollowList(String userId) {
         List<FollowVo> list = new ArrayList<>();
@@ -16,7 +16,7 @@ public class FollowDao {
         try {
             Connection conn = Common.getConnection();
             PreparedStatement pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, userId);
+            pstmt.setString(1, userId.replace("\"", ""));
             ResultSet rs = pstmt.executeQuery();
             while (rs.next()) {
                 String followUserId = rs.getString("follow_id");

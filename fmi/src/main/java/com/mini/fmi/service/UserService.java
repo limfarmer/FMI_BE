@@ -1,7 +1,7 @@
 package com.mini.fmi.service;
 
 import com.mini.fmi.dao.UserDao;
-import com.mini.fmi.dao.FollowDao;
+import com.mini.fmi.dao.MypageDao;
 import com.mini.fmi.vo.UserVo;
 import com.mini.fmi.vo.FollowVo;
 import org.springframework.stereotype.Service;
@@ -11,11 +11,11 @@ import java.util.List;
 @Service
 public class UserService {
     private final UserDao userDao;
-    private final FollowDao followDao;
+    private final MypageDao mypageDao;
 
-    public UserService(UserDao userDao, FollowDao followDao) {
+    public UserService(UserDao userDao, MypageDao mypageDao) {
         this.userDao = userDao;
-        this.followDao = followDao;
+        this.mypageDao = mypageDao;
     }
 
     public UserVo getUserInfo(String userId) {
@@ -27,11 +27,11 @@ public class UserService {
     }
 
     public List<FollowVo> getFollowList(String userId) {
-        return followDao.getFollowList(userId);
+        return mypageDao.getFollowList(userId);
     }
 
     public boolean unfollowTeam(String userId, String teamId) {
-        return followDao.unfollowTeam(userId, teamId);
+        return mypageDao.unfollowTeam(userId, teamId);
     }
 
     public boolean deleteUser(String userId) {

@@ -64,6 +64,7 @@ public class UserController {
 
     @GetMapping("/{userId}")
     public ResponseEntity<UserVo> getUser(@PathVariable String userId) {
+        System.out.println("mypage member informaiton controller");
         UserVo user = userService.getUserInfo(userId);
         return ResponseEntity.ok(user);
     }

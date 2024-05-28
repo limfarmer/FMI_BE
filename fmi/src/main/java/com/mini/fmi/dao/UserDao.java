@@ -104,7 +104,7 @@ public class UserDao {
         try {
             Connection conn = Common.getConnection();
             PreparedStatement pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, id);
+            pstmt.setString(1, id.replace("\"", ""));
             result = pstmt.executeUpdate();
             Common.close(pstmt);
             Common.close(conn);
@@ -116,12 +116,13 @@ public class UserDao {
 
     // 사용자 정보 가져오기
     public UserVo getUserById(String userId) {
+        System.out.println(userId+ "! userId from dao start");
         UserVo user = null;
         String sql = "SELECT * FROM USERS WHERE USER_ID = ?";
         try {
             Connection conn = Common.getConnection();
             PreparedStatement pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, userId);
+            pstmt.setString(1, userId.replace("\"", ""));
             ResultSet rs = pstmt.executeQuery();
             if (rs.next()) {
                 user = new UserVo(
@@ -132,6 +133,7 @@ public class UserDao {
                         rs.getString("NAME"),
                         rs.getString("NICKNAME")
                 );
+                System.out.println(user.getId() + " user id from dao end");
             }
             Common.close(rs);
             Common.close(pstmt);
@@ -171,7 +173,7 @@ public class UserDao {
             Connection conn = Common.getConnection();
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, status);
-            pstmt.setString(2, userId);
+            pstmt.setString(2, userId.replace("\"", ""));
             result = pstmt.executeUpdate();
             Common.close(pstmt);
             Common.close(conn);
